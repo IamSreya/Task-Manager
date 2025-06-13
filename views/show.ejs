@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+			rel="stylesheet" />
+		<style>
+			.font-playfair {
+				font-family: "Playfair Display", serif;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="bg-zinc-800 text-white px-6 py-4 shadow-md">
+			<h1
+				class="text-2xl text-center font-playfair font-bold tracking-tight text-blue-400">
+				Task Manager
+			</h1>
+		</nav>
+
+		<div class="main w-full min-h-screen bg-zinc-900 p-10 text-white">
+			<a
+				class="text-blue-500 inline-block mb-10 bg-white px-4 py-1 rounded hover:underline"
+				href="/"
+				>Back</a
+			>
+			<h1
+				class="text-3xl tracking-tighter px-5 py-5 font-playfair text-center bg-blue-900 rounded-md">
+				<%= filename %>
+			</h1>
+			<p class="text-xl mt-2"><%= filedata %></p>
+		</div>
+	</body>
+</html>
